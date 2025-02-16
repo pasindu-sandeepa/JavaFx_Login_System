@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterForm">
+   <children>
+      <Label layoutX="225.0" layoutY="40.0" prefHeight="28.0" prefWidth="47.0" text="Register" />
+      <Label layoutX="74.0" layoutY="100.0" prefHeight="28.0" prefWidth="74.0" text="username" />
+      <TextField fx:id="TxtRegisterFormBoxUserName" layoutX="194.0" layoutY="101.0" onAction="#TextboxRegisterFormUsernameOnAction" prefHeight="26.0" prefWidth="214.0" />
+      <PasswordField fx:id="TxtBoxRegisterFormPassword" layoutX="194.0" layoutY="152.0" onAction="#TxtBoxRegisterFormPasswordOnAction" prefHeight="26.0" prefWidth="214.0" />
+      <Button fx:id="BtnRgisterFormRegister" layoutX="210.0" layoutY="262.0" mnemonicParsing="false" onAction="#BtnRegisterFormRegisterLoginOnAction" prefHeight="26.0" prefWidth="162.0" text="Register" />
+      <Label fx:id="loginMessageLabel" layoutX="100.0" layoutY="250.0" />
+      <Label layoutX="74.0" layoutY="151.0" prefHeight="28.0" prefWidth="74.0" text="password" />
+      <Label layoutX="74.0" layoutY="200.0" prefHeight="28.0" prefWidth="97.0" text="Confirmpassword" />
+      <PasswordField fx:id="TxtConfirmPasswordBoxPassword" layoutX="193.0" layoutY="201.0" onAction="#TxtBoxConfirmPasswordOnAction" prefHeight="26.0" prefWidth="214.0" />
+      <Hyperlink fx:id="HykRegisterForm" layoutX="188.0" layoutY="314.0" onAction="#HykRegisterFormOnAction" text="All ready you have an account? Login" />
+   </children>
+</AnchorPane>
